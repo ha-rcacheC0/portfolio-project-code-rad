@@ -1,0 +1,184 @@
+:root {
+    --white: #FFF;
+    --black: #000;
+    --font-color-base: #665;
+    --font-color-dark: #212529;
+    --font-color-light: #b0aebe;
+    --font-color-link: #57a6ff;
+    --footer: #34314b;
+    --footer-base: #2e2b45;
+    --contrast: rgba(246, 248, 249, 0.6);
+    --success: #64ecf5;
+    --danger: #ff888d;
+    --grad-1: #a1ecff;
+    --grad-2: #7bdcff;
+
+    --size-10: 0.625rem;
+    --size-14: 0.825rem;
+    --size-16: 1rem;
+    --size-18: 1.125rem;
+    --size-20: 1.25rem;
+    --size-30: 1.875rem;
+    --size-40: 2.5rem;
+    --size-50: 3.125rem;
+    --size-100: 6.25rem;
+    --size-150: 9.375rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: var(--font-color-base);
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: var(--font-color-dark);
+    text-align: center;
+    cursor: pointer;
+    user-select: transparent;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.475rem 1.75rem;
+    border-radius: 1.25rem;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-primary {
+    background-image: linear-gradient(90deg, var(--grad-1) 0%, var(--grad-2) 100%);
+    border: 1px solid var(--grad-1);
+    box-shadow: 0 10px 20px rgba(161, 236, 255, 0.5);
+    transition: ease-in-out 0.3s;
+    color: var(--white);
+    padding: 0.4375rem 1.5625rem;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--font-color-link);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.35);
+    padding: 0.475rem 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .pricing-table,
+    .testimonial-grid,
+    .footer-bottom-wrapper { 
+        max-width: 720px; 
+    }
+
+}
+
+/*
+@media (min-width: 992px) {
+    footer .container {
+        max-width: 960px;
+    }
+
+}
+*/
+
+@media (min-width: 1200px) {
+    .container { 
+        max-width: 1140px; 
+    }
+}
+
+
+
+/* CSS For Sticky Footer Exercise
+
+
+.sticky-foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    margin: 0 auto;
+    background-image: url("https://plus.unsplash.com/premium_photo-1682309676673-392c56015c5c?q=80&w=2112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    object-fit: contain;
+    background-position: 70% 30%;
+}
+
+.text h2 {
+    font-size: var(--size-20);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.text p {
+    font-size: var(--size-14);
+    color: var(--white);
+    margin-top: 0;
+}
+
+.button a {
+    background-color: var(--font-color-light);
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    left: 300px;
+    margin: 0 auto;
+}
+
+ */
